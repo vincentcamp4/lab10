@@ -7,7 +7,7 @@
 class Person
 {
     protected:
-        // instance variables here...
+        
 
     public:
         Person();

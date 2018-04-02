@@ -4,5 +4,8 @@
 
 int main()
 {
-	
+	cout << "Testing setters/getters: " << endl;
+	cout << "-------------------------------------------------------------" << endl << endl;
+
+	cout << "Student "
 }

@@ -27,8 +27,8 @@ std::string  Person::getLastName()
 struct tm    Person::getDateOfBirth()
 {
 	struct tm dob;
-	dob.tm_day = 0;
-	dob.tm_mo = 0;
+	dob.tm_mday = 0;
+	dob.tm_mon = 0;
 	dob.tm_year = 0;
 	return dob;
 } 
@@ -63,12 +63,12 @@ void Person::setFirstName(std::string fname)
 
 }
 
-void Person::setLastName(std::string lname);
+void Person::setLastName(std::string lname)
 {
 
 }
 
-void Person::setDateOfBirth(int day, int month, int year);
+void Person::setDateOfBirth(int day, int month, int year)
 {
 
 }
@@ -97,3 +97,5 @@ void Person::setPhone(long number)
 {
 	
 }
+
+#endif 

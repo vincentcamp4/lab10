@@ -2,6 +2,8 @@
 #include "Student.h"
 #include "Person.h"
 
+using namespace std;
+
 int main() 
 {
 	cout << "Testing setters/getters:" << endl;

@@ -97,4 +97,9 @@ void Person::setPhone(long number)
 {
 	
 }
+<<<<<<< HEAD
 #endif
+=======
+
+#endif 
+>>>>>>> d7f9c03dac95e73461a42c990ff8c65998c8e4e7

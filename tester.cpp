@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 #include <iostream>
 #include "Student.h"
 #include "Person.h"
@@ -16,4 +15,4 @@ int main()
 	p.setFirstName("Lilly");
 	cout << "First Name: " << p.getFirstName() << "[Expected: Lilly]" << endl;
 }
->>>>>>> d7f9c03dac95e73461a42c990ff8c65998c8e4e7
+

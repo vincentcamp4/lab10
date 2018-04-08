@@ -27,11 +27,15 @@ std::string  Person::getLastName()
 
 struct tm    Person::getDateOfBirth()
 {
+<<<<<<< HEAD
 	struct tm dob;
 	dob.tm_mday = this->day;
 	dob.tm_mon = this->month;
 	dob.tm_year = this->year;
 	return dob;
+=======
+	return Person::dob;
+>>>>>>> jm6ms
 } 
 
 std::string  Person::getAddress() 
@@ -71,10 +75,16 @@ void Person::setLastName(std::string lname)
 
 void Person::setDateOfBirth(int day, int month, int year)
 {
+<<<<<<< HEAD
 	this-> day = day;
 	this-> month = month;
 	this-> year = year;
 
+=======
+	Person::dob.tm_mday = day;
+	Person::dob.tm_mon = month;
+	Person::dob.tm_year = year;
+>>>>>>> jm6ms
 }
 
 void Person::setAddress(std::string address)

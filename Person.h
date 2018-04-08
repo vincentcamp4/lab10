@@ -22,6 +22,10 @@ class Person
         std::string address;
         long phone;
         long number;
+<<<<<<< HEAD
+=======
+        struct tm dob;
+>>>>>>> jm6ms
 
 
     public:

@@ -1,6 +1,7 @@
 #ifndef __PERSON_CPP__
 #define __PERSON_CPP__
 
+#include <iostream>
 #include "Student.h"
 #include "Person.h"
 
@@ -16,84 +17,84 @@ Person::~Person() {}
 
 std::string  Person::getFirstName()
 {
-	return "";
+	return this->fname;
 }
 
 std::string  Person::getLastName()
 {
-	return "";
+	return this->lname;
 }
 
 struct tm    Person::getDateOfBirth()
 {
-	struct tm dob;
-	dob.tm_day = 0;
-	dob.tm_mo = 0;
-	dob.tm_year = 0;
-	return dob;
+	return Person::dob;
 } 
 
 std::string  Person::getAddress() 
 {
-	return "";
+	return this->address;
 }
 
 std::string  Person::getNetID() 
 {
-	return "";
+	return this->netid;
 }
 
-int          Person::getURID()
+int Person::getURID()
 {
-	return 0;
+	return this->urid;
 }
 
 std::string  Person::getEmail()
 {
-	return "";
+	return this->email;
 }
 
 long         Person::getPhone()
 {
-	return 0;
+	return this->number;
 }
 
 void Person::setFirstName(std::string fname)
 {
-
+	this->fname = fname;
 }
 
-void Person::setLastName(std::string lname);
+void Person::setLastName(std::string lname)
 {
-
+	this->lname = lname;
 }
 
-void Person::setDateOfBirth(int day, int month, int year);
+void Person::setDateOfBirth(int day, int month, int year)
 {
-
+	Person::dob.tm_mday = day;
+	Person::dob.tm_mon = month;
+	Person::dob.tm_year = year;
 }
 
 void Person::setAddress(std::string address)
 {
-
+	this->address = address;
 }
 
 void Person::setNetID(std::string netid)
 {
-
+	this->netid = netid;
 }
 
 void Person::setURID(int urid)
 {
-
+	this->urid = urid;
 }
 
 void Person::setEmail(std::string email)
 {
-
+	this->email = email;
 }
 
 void Person::setPhone(long number)
 {
-	
+	this->number = number;
 }
+
+#endif 

@@ -1,13 +1,29 @@
 #ifndef __PERSON_H__
 #define __PERSON_H__
 
+#include <iostream>
 #include <string>
 #include <ctime>
 
 class Person
 {
     protected:
-        
+        int urid;
+        std::string netid;
+        std::string lname;
+        std::string fname;
+        int dob_day;
+        int dob_month;
+        int dob_year;
+        int day;
+        int month;
+        int year;
+        std::string email;
+        std::string address;
+        long phone;
+        long number;
+        struct tm dob;
+
 
     public:
         Person();

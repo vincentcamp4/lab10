@@ -60,7 +60,7 @@ long         Person::getPhone()
 
 void Person::setFirstName(std::string fname)
 {
-
+	
 }
 
 void Person::setLastName(std::string lname)

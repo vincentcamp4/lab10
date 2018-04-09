@@ -1,6 +1,6 @@
 #ifndef __STUDENT_H__
 #define __STUDENT_H__
-
+#include <iostream>
 #include <list>
 #include "Person.h"
 
@@ -13,6 +13,16 @@ class Student : public Person
 
     protected:
         // instance variables here...
+        int day;
+        int month;
+        int year;
+        double gpa;
+        double units_completed;
+        bool is_full_time;
+        std::list<std::string> courses;
+        struct tm admitDate;
+        School school;
+        
         
     public:
         Student();                      // explicitly call Person() on implementation

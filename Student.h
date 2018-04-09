@@ -17,7 +17,7 @@ class Student : public Person
         int month;
         int year;
         double gpa;
-        double units_completed;
+        double unitsCompleted;
         bool is_full_time;
         std::list<std::string> courses;
         struct tm admitDate;

@@ -65,12 +65,12 @@ Student::~Student()
 
         double Student::getUnitsCompleted()
         {
-            return 0;
+            return Student::unitsCompleted;
         }
 
         bool Student::isFullTime()
         {
-            return false;
+            return Student::is_full_time;
         }
 
         void Student::setAdmitDate(int day, int month, int year)
@@ -89,10 +89,10 @@ Student::~Student()
         }
         void Student::setUnitsCompleted(double units)
         {
-
+            Student::unitsCompleted = units;
         }
         void Student::setFullTimeStatus(bool isFullTime)
         {
-
+            Student::is_full_time = isFullTime;
         }
 #endif

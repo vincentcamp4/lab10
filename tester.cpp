@@ -46,6 +46,7 @@ int main()
 
 	cout << "s2.Student::setAdmitDate(10,7,2015)" << endl;
 	s2.Student::setAdmitDate(10, 7, 2015);
+	//Each portion of the struct must be printed out individually
 	cout << "Date Admitted: " << 
 	s2.Student::getAdmitDate().tm_mday  << "/" <<
 	s2.Student::getAdmitDate().tm_mon  << "/" <<
